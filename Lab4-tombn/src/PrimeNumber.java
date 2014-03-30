@@ -11,8 +11,9 @@ public class PrimeNumber {
 			result.add(2);
 			i/=2;
 		}
-		if (i % 3 == 0){
+		while (i % 3 == 0){
 			result.add(3);
+			i/=3;
 		}
 		return result;
 	}
