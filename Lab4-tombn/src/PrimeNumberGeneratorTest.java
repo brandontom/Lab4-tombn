@@ -14,12 +14,17 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void testOne() {
-		assertEquals(makeList(), PrimeNumber.generateFactors(1));
+		assertEquals(makeList(), PrimeNumberGenerator.generatePrimes(1));
 	}
 	
 	@Test
 	public void testTwo() {
-		assertEquals(makeList(2), PrimeNumber.generateFactors(2));
+		assertEquals(makeList(), PrimeNumberGenerator.generatePrimes(2));
+	}
+	
+	@Test
+	public void testThree() {
+		assertEquals(makeList(2), PrimeNumberGenerator.generatePrimes(3));
 	}
 
 	
