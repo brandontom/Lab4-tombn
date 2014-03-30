@@ -16,6 +16,11 @@ public class PrimeNumberGeneratorTest {
 	public void testOne() {
 		assertEquals(makeList(), PrimeNumber.generateFactors(1));
 	}
+	
+	@Test
+	public void testTwo() {
+		assertEquals(makeList(2), PrimeNumber.generateFactors(2));
+	}
 
 	
 	public ArrayList<Integer> makeList(int... ints) {
