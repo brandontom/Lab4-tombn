@@ -47,6 +47,11 @@ public class PrimeNumberTest {
 		assertEquals(makeList(3, 3), PrimeNumber.generateFactors(9));
 	}
 	
+	@Test
+	public void testLarge() {
+		assertEquals(makeList(5, 7, 7, 1327), PrimeNumber.generateFactors(325115));
+	}
+	
 	public ArrayList<Integer> makeList(int... ints) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int i : ints) {

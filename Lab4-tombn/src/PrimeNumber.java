@@ -7,14 +7,15 @@ public class PrimeNumber {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if (i <= 1)
 			return result;
-		while (i % 2 == 0){
-			result.add(2);
-			i/=2;
+		
+		for(int candidate = 2; i > 1; candidate++){
+			if(i % candidate == 0){
+				i = i / candidate;
+				result.add(candidate);
+				candidate = 1;
+			}
 		}
-		while (i % 3 == 0){
-			result.add(3);
-			i/=3;
-		}
+		
 		return result;
 	}
 	
