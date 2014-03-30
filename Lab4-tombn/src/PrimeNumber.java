@@ -10,6 +10,9 @@ public class PrimeNumber {
 		if (i % 2 == 0){
 			result.add(2);
 		}
+		if (i % 3 == 0){
+			result.add(3);
+		}
 		return result;
 	}
 	
