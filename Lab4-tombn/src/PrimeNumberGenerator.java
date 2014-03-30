@@ -11,6 +11,9 @@ public class PrimeNumberGenerator {
 		if (i > 2){
 			result.add(2);
 		}
+		if (i > 3){
+			result.add(3);
+		}
 		return result;
 	}
 	
