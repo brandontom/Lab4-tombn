@@ -27,6 +27,11 @@ public class PrimeNumberTest {
 		assertEquals(makeList(3), PrimeNumber.generateFactors(3));
 	}
 	
+	@Test
+	public void testFour() {
+		assertEquals(makeList(2, 2), PrimeNumber.generateFactors(4));
+	}
+	
 	public ArrayList<Integer> makeList(int... ints) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		for(int i : ints) {

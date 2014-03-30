@@ -7,8 +7,9 @@ public class PrimeNumber {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if (i <= 1)
 			return result;
-		if (i % 2 == 0){
+		while (i % 2 == 0){
 			result.add(2);
+			i/=2;
 		}
 		if (i % 3 == 0){
 			result.add(3);
